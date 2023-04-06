@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Eray Genç</title>
-    </head>
-    <body>
-        <h1>Welcome to Eray's World</h1>
-        <p>I'm currently pursuing Computer Engineering degree and this website is where you reach my works.</p>
-        <p>More about me:</p>
-        <p><a href="https://www.linkedin.com/in/eraygenc/">LinkedIn</a></p>
-        
-        <br>
-        
-        <h3>In Class Activities:</h3>
-        <p><a href="https://gnceray.github.io/inclassactivities/activity1.html">In Class Activity 1</a></p>
-        <p><a href="https://gnceray.github.io/InclassActivities/inclassactivity2/Activity2.html">In Class Activity 2</a></p>
-        
-    </body>
+<head>
+	<title>Eray Genç</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to my personal website</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#about-me">About Me</a></li>
+			<li><a href="#my-work">My Work</a></li>
+			<li><a href="#contact-me">Contact Me</a></li>
+		</ul>
+	</nav>
+	<section id="about-me">
+		<h2>About Me</h2>
+		<p>Hi there! My name is Eray Genç and I'm a computer engineering student.</p>
+	</section>
+	<section id="my-work">
+		<h2>My Work</h2>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="https://via.placeholder.com/150x100" alt="Project 1">
+					<h3>Project 1</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="https://via.placeholder.com/150x100" alt="Project 2">
+					<h3>Project 2</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="https://via.placeholder.com/150x100" alt="Project 3">
+					<h3>Project 3</h3>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section id="contact-me">
+		<h2>Contact Me</h2>
+		<form action="#" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+	</section>
+	<footer>
+		<p>&copy; 2023 Eray Genç. All rights reserved.</p>
+	</footer>
+</body>
 </html>
