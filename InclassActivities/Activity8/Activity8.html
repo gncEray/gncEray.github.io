@@ -1,0 +1,64 @@
+<!--Eray Genç-->
+<!--19050111005-->
+
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="Activity8.css">
+        <link rel="stylesheet" href="jquery-ui.css">
+
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="Activity8.js"></script>
+
+    </head>
+
+    <body>
+
+        <form>
+
+            <table id="table_t">
+      
+              <tr>
+                <td>What programming language do you know?</td>
+                <td>
+                    <!--added autocomplete in JS-->
+                    <input id="languages" type="text" required>
+                </td> 
+              </tr>
+              <tr>
+                <td>What is your birthday?</td>
+                <td>
+                    <!--added datepicker in JS-->
+                    <input id="birthday" type="text" name="birthday" required>
+                </td>
+              </tr>
+              <tr>
+                <td>Email Address; </td>
+                <td>
+                    <!--added placeholder, then validation was predefined in email type-->
+                    <input type="email" name="email" required placeholder="Enter a valid email address">
+                </td> 
+              </tr>
+              <tr>
+                <td>Website; </td>
+                <td>
+                    <!--added pattern here-->
+                    <input type="url" name="website" required pattern="https?://.+">
+                </td>
+              </tr>
+                
+              <tr>
+                <td><input type="submit" value="submit"></td>
+              </tr>
+      
+            </table>
+      
+          </form>
+
+
+    </body>
+
+
+</html>

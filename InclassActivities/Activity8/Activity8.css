@@ -1,0 +1,12 @@
+/*Eray Genç*/
+/*19050111005*/
+
+#table_t {
+    margin: 2%;
+    height: 25%;
+    width: 25%;
+}
+
+table tr td input:invalid {
+    outline: 2px solid red;  /*textfield will be red if there is invalid value inside*/
+}
