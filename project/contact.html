@@ -1,0 +1,241 @@
+<!--Burada hem contact hem writer başvurusu alınacak-->
+<!--bi combobox ile hangisi olduğunu seçecek user-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ABCLand</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+
+    <div class="header">
+        
+        <div class="nav">
+            <a href="index.html"><img src="images/logo.jpg"  alt="image"/></a>    
+            <ul>
+                <li>
+                    <a href="art.html">ART</a>
+                </li>
+                <li>
+                    <a href="book.html">BOOK</a>
+                </li>
+                <li>
+                    <a href="cinema.html">CINEMA</a>
+                </li>                
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li> 
+            </ul>            
+        </div> 
+
+        <div class="title">
+            <h3>Contact Us.</h3>
+        </div>
+
+    </div>
+
+
+    <div class="content">
+        <h1>Hello</h1>  
+        <p>You can use the form below to contact us. You can contact us for applying to become a writer or give us your feedback. Here what can you do in this page:</p>
+        <ul>
+            <li>
+                Contact us for anything
+            </li>
+            <li>
+                Give us feedback about us or our products
+            </li>
+            <li>
+                Join us as writer, developer, or designer
+            </li>
+        </ul>
+        <p>You can give your all opinions sincerely. We are happy to heear from you. You can either give a feedback, contact us or apply for three different roles in this page.</p>
+        
+    </div>
+
+
+    
+    <div class="buttons">
+        <ul>
+            <li>
+                <button id="btn_contact">Contact</button>
+            </li>
+            <li>
+                <button id="btn_apply">Apply</button>
+            </li>
+        </ul>
+        
+        
+    </div>
+
+
+
+    <div class="ilan" id="req_res">
+
+        <h2>Job Description:</h2>
+        <p>We are seeking a talented and passionate writer to join our team and contribute to our art, book, and movie blog website. As a writer, you will be responsible for creating engaging and informative content related to various art forms, literature, and film. Your articles will cater to a diverse audience of art enthusiasts, book lovers, and movie buffs.</p>   
+        <p><b>You can use application form to apply for becoming a writer, developer and/or designer.</b></p>
+
+        <h2>Responsibilities:</h2>
+        <ul>
+          <li>Create engaging and well-researched articles, reviews, and features on art, books, and movies.</li>
+          <li>Stay updated on the latest trends, news, and releases in the art, book, and movie industry.</li>
+          <li>Develop unique and captivating story ideas.</li>
+          <li>Write in an engaging style that appeals to our target audience.</li>
+          <li>Collaborate with the editorial team to ensure content consistency.</li>
+          <li>Optimize content for search engines (SEO).</li>
+          <li>Proofread and edit your work for accuracy and clarity.</li>
+          <li>Adhere to deadlines and publishing schedules.</li>
+          <li>Engage with readers by responding to comments and fostering community.</li>
+        </ul>
+        <h2>Requirements:</h2>
+        <ul>
+          <li>Excellent writing skills with a strong command of English.</li>
+          <li>Passion and knowledge of art, literature, and movies.</li>
+          <li>Experience in writing blog posts or similar content.</li>
+          <li>Ability to conduct research from reliable sources.</li>
+          <li>Creativity in generating fresh content ideas.</li>
+          <li>Attention to detail and self-editing skills.</li>
+          <li>Familiarity with SEO principles.</li>
+          <li>Strong time management and communication skills.</li>
+          <li>Portfolio or writing samples related to art, books, or movies (optional).</li>
+        </ul>   
+        
+    </div>
+
+
+    
+    
+
+
+   	<div class="contact-form"> 
+
+        
+        <form action="Activity4-preview.php" method="post" id="contact">
+            <h1>We'd Love To Hear From You.</h1>
+            <table id="table_t">
+        
+              <tr>
+                <td>Name:</td>
+                <td>
+                    <input id="name" type="text" name="name" required>
+                </td> 
+              </tr>
+              <tr>
+                <td>Subject:</td>
+                <td>
+                    <select id="subject" name="subject">
+                        <option value="select">(Please select a subject)</option>
+                        <option value="feedback">Give a feedback</option>
+                        <option value="contact">Just Contact Us</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Country:</td>
+                <td>
+                    <input id="country" type="text" name="country" required> 
+                </td> 
+              </tr>
+              <tr>
+                <td>Email Address: </td>
+                <td>
+                    <input type="email" name="email" required placeholder="Enter a valid email address">
+                </td> 
+              </tr>
+              <tr>
+                <td>Website: </td>
+                <td>
+                    <input type="url" name="website" required pattern="https?://.+">
+                </td>
+              </tr>
+              <tr>
+                <td>About:</td>
+                <td>
+                    <textarea name="about"></textarea>
+                </td>
+              </tr>
+        
+            </table>
+
+            <input type="submit" value="submit">
+
+        </form>   
+        
+        
+        <form method="post" id="apply">
+            <h1>Join us as writer, developer or designer.</h1>
+            <table id="table_t">
+        
+              <tr>
+                <td>Name:</td>
+                <td>
+                    <input id="name" type="text" name="name" required>
+                </td> 
+              </tr>
+              <tr>
+                <td>Email Address: </td>
+                <td>
+                    <input type="email" name="email" required placeholder="Enter a valid email address">
+                </td> 
+              </tr>
+              <tr>
+                <td>Birth Date:</td>
+                <td>
+                    <input id="bdate" type="text" name="bdate" required>  
+                </td> 
+              </tr>
+              <tr>
+                <td>Country:</td>
+                <td>
+                    <input id="country" type="text" name="country" required>  
+                </td> 
+              </tr>                  
+              <tr>
+                <td>Roles:</td>
+                <td>
+                    <input type="checkbox" name="roles[]" value="Writer">Writer
+                    <input type="checkbox" name="roles[]" value="Developer">Developer
+                    <input type="checkbox" name="roles[]" value="Designer">Designer
+                </td>
+              </tr>
+              <tr>
+                <td>Experience:</td>
+                <td>
+                    <textarea name="about"></textarea>
+                </td> 
+              </tr>
+              <tr>
+                <td>Additions:</td>
+                <td>
+                    <textarea name="about"></textarea>
+                </td>
+              </tr>
+        
+            </table>
+
+            <input type="submit" value="submit">
+
+        </form>
+   		
+   	</div>
+
+
+    <footer id="copyright">
+        <p> &copy; Copyright - 2023 by Eray Genç</p>
+    </footer>
+
+
+
+</body>

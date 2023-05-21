@@ -1,8 +1,12 @@
+/* -------- HEADER ------ */
+
 .header 
 {
     width: 100%;
 }
 
+
+/* -------- NAV ------ */
 
 .nav 
 {
@@ -45,6 +49,9 @@ a:hover
     color: grey;
 }
 
+
+/* TITLE */
+
 .title 
 {
     width: 100%;
@@ -60,7 +67,7 @@ a:hover
 
 .title h3 
 {
-    color: #fff;
+    color: white;
     font-size: 32px;
     text-align: center;
     text-shadow: 3px 3px #000;
@@ -68,7 +75,7 @@ a:hover
 }
 
   
-  
+  /* CONTENT */
 
 .content
 {
@@ -88,7 +95,7 @@ a:hover
     display: flex;
     justify-content: center;
 }
-.content h3
+.content h3, h1, h2
 {
     display: flex;
     justify-content: center;
@@ -104,12 +111,22 @@ a:hover
 }
 .content ol
 {
-    /*display: flex;  
-    justify-content: center; // Bunları ekleyince dikey tablar oluşuyor*/
     margin-left: 15%;
     margin-right: 15%;
     font-size: 20px;
 }
+.content ul
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* COPYRIGHT */
 
 .copyright
 {
@@ -118,6 +135,8 @@ a:hover
     position: relative;
 }
 
+
+/* FOOTER */
 
 footer {
     background-color: gray;
@@ -132,3 +151,316 @@ footer {
     margin: 0%;
   }
   
+
+
+
+
+
+
+
+/* form */
+
+.contact-form {  /*form kısmı div*/
+    display: flex;
+    flex-direction: column;  /*for making vertical form title and content*/
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+form td {
+    padding: 15px;
+}
+  
+form input[type="text"],
+form input[type="email"],
+form input[type="url"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+form textarea {
+    padding: 30px 10px;
+}
+
+form input[type="submit"] {
+    background-color: greenyellow;
+    color: white;
+    padding: 10px 20px;  /*size*/
+    border-radius: 4px;  /**/
+    cursor: pointer;  /*making normal mouse cursor to cursor pointer*/
+    font-size: 14px;
+}
+
+form input[type="submit"]:hover {
+    background-color: green;
+}
+
+
+
+
+.quiz_button {
+    display: flex;
+    justify-content: center;
+}
+#btn_quiz {
+    background-color: greenyellow;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn_quiz:hover {
+    background-color: green;
+}
+
+.quiz {  /*form kısmı div*/
+    display: flex;
+    flex-direction: column;  /*for making vertical form title and content*/
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+
+
+.answer_form {  /*form kısmı div*/
+    display: flex;
+    flex-direction: column;  /*for making vertical form title and content*/
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+form td {
+    padding: 15px;
+}
+  
+form input[type="text"],
+form input[type="email"],
+form input[type="url"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+form textarea {
+    padding: 30px 10px;
+}
+
+form input[type="submit"] {
+    background-color: greenyellow;
+    color: white;
+    padding: 10px 20px;  /*size*/
+    border-radius: 4px;  /**/
+    cursor: pointer;  /*making normal mouse cursor to cursor pointer*/
+    font-size: 14px;
+}
+
+form input[type="submit"]:hover {
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ilan
+{
+    width: 100%;
+}
+.ilan img
+{
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilan h2, 
+.ilan h1
+{
+    display: flex;
+    justify-content: center;
+}
+.ilan p
+{
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+}
+.ilan ul
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttons ul {
+    display: flex;
+    list-style: none; /*to remove list item dot*/
+  }
+  
+  .buttons ul li {
+    margin: 0 30px;
+  }
+  
+  .buttons button {
+    background-color: greenyellow;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: green;
+  }
+
+
+  .filter {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 25px 35px;
+  }
+
+
+  .custom-dialog {
+    background-color: black; 
+    color: white;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+
+  .row_cine {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .row_art {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .row_book {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .product {
+    flex-basis: 30%;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+  }
+  
+  .buy-button {
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .buy-button:hover {
+    background-color: green;
+  }
+  
+  
+  .image-sizes{
+    display: flex;
+    justify-content: center;
+  }
+  .buy-button-dialog {
+    display: flex;
+    justify-content: center;
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .buy-button-dialog:hover{
+    background-color: green;
+  }

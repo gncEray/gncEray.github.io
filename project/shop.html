@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABCLand</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="shop.css">
+
+
+
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+
+    <div class="header">
+        
+        <div class="nav">
+            <a href="index.html"><img src="images/logo.jpg"  alt="image"/></a>    
+            <ul>
+                <li>
+                    <a href="art.html">ART</a>
+                </li>
+                <li>
+                    <a href="book.html">BOOK</a>
+                </li>
+                <li>
+                    <a href="cinema.html">CINEMA</a>
+                </li>                
+                <li>
+                  <a href="shop.html">Shop</a>
+              </li>
+              <li>
+                  <a href="contact.html">Contact</a>
+              </li> 
+            </ul>            
+        </div> 
+
+
+        <div class="title">
+            <h3>Order a poster, table, or sculpture.</h3>
+        </div>
+
+    </div>
+
+
+
+    <div class="content">
+      <div class="text">
+          <h3>Shop</h3>  
+          <p>Discover our online shop offering a wide selection of art, book, and movie posters in various sizes. You can also find tables and sculptures. Please be aware that our paintings are reproductions and not original paintings. Explore our collection and bring home captivating visuals that celebrate the realms of art, literature, and film.</p>
+      </div>
+  </div>
+
+  <div class="filter">
+    <label>
+      <input type="radio" name="filter" value="all" id="filter_all" checked> All
+    </label>
+    <label>
+      <input type="radio" name="filter" value="art" id="filter_art"> Art
+    </label>
+    <label>
+      <input type="radio" name="filter" value="book" id="filter_book"> Book
+    </label>
+    <label>
+      <input type="radio" name="filter" value="cinema" id="filter_cinema"> Cinema
+    </label>
+  </div>
+    
+
+
+    <div class="container">
+        <div class="row_cine">
+            <div class="product">
+              <img src="images/ince.jpg" alt="Product 1">
+              <h3>Inception Poster</h3>
+              <p>$19.99</p>
+              <button class="buy-button">Buy</button>
+            </div>
+            <div class="product">
+              <img src="images/ince.jpg" alt="Product 2">
+              <h3>Product 2</h3>
+              <p>$24.99</p>
+              <button class="buy-button">Buy</button>
+            </div>
+            <div class="product">
+              <img src="images/ince.jpg" alt="Product 3">
+              <h3>Product 3</h3>
+              <p>$14.99</p>
+              <button class="buy-button">Buy</button>
+            </div>
+        </div>
+        <div class="row_art">
+            <div class="product">
+                <img src="images/monalisa.jpg" alt="Product 1">
+                <h3>Mona Lisa Table (Duplicated)</h3>
+                <p>$19.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+              <div class="product">
+                <img src="images/monalisa.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$24.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+              <div class="product">
+                <img src="images/monalisa.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$14.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+        </div>
+        <div class="row_art">
+            <div class="product">
+                <img src="images/athena.jpeg" alt="Product 1">
+                <h3>Bust of Athena</h3>
+                <p>$19.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+              <div class="product">
+                <img src="images/athena.jpeg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$24.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+              <div class="product">
+                <img src="images/athena.jpeg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$14.99</p>
+                <button class="buy-button" id="buy-button">Buy</button>
+              </div>
+        </div>
+        
+
+      </div>
+      
+
+      
+      <div id="dialog" style="display: none;">
+        <h3>Inception Poster</h3>
+        <div class="image-container">
+          <img src="images/ince.jpg" alt="Dialog Image">
+        </div>
+        <div class="image-sizes">
+          <label>
+            <input type="radio" name="size" value="small" checked> Small
+          </label>
+          <label>
+            <input type="radio" name="size" value="medium"> Medium
+          </label>
+          <label>
+            <input type="radio" name="size" value="big"> Large
+          </label>
+        </div>
+        <p>You can select size for poster.</p>
+        <ul>
+          <li>
+            Small: 100cmx150cm
+          </li>
+          <li>
+            Medium: 200cmx300cm
+          </li>
+          <li>
+            Large: 300cmx450cm
+          </li>
+        </ul>
+        <button class="buy-button-dialog">Buy</button>
+      </div>
+    
+      
+
+
+    <footer id="copyright">
+        <p> &copy; Copyright - 2023 by Eray Genç</p>
+    </footer>
+
+
+
+</body>

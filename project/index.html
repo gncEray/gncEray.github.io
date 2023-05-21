@@ -4,6 +4,10 @@
 <head>
 	<title>ABCLand</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -23,8 +27,15 @@
                 <li>
                     <a href="cinema.html">CINEMA</a>
                 </li>                
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
             </ul>            
         </div> 
+
 
         <div class="title">
             <h3>Your place for Art, Book and Cinema</h3>
@@ -33,7 +44,6 @@
     </div>
 
     
-
 
     <div class="content">
         <div class="image" >
@@ -46,6 +56,80 @@
             <p>Books: My Books subpage is dedicated to the world of literature. Here, you'll find a wide range of book reviews, author interviews, and articles that explore the latest trends and developments in the world of books. Whether you're a fan of fiction, non-fiction, or poetry, my Books subpage has something to satisfy your literary cravings.</p>
             <p>Cinema: My Cinema subpage is dedicated to the world of film. Here, you'll find a wide range of film reviews, interviews, and articles that explore the latest trends and developments in the world of cinema. From Hollywood blockbusters to indie gems, my Cinema subpage has something for everyone who loves the magic of the silver screen.</p>
             <p>With my three subpages - Art, Books, and Cinema - I aim to provide you with a comprehensive and engaging exploration of the world of culture. I hope that you'll enjoy my content and find something that inspires you.</p>
+        </div>
+    </div>
+
+
+    <div class="quiz_button">
+        <button id="btn_quiz">See Today's Quiz</button>
+    </div>
+
+    <div class="quiz">
+        <div class="question">
+            <h2>Daily Quiz</h2>
+            <p>Fill blanks for Mona Lisa table. Contest is separated for 12-18, and 18+ ages. So, you must give your birthdate.</p>
+        </div>
+        <div class="answer_form">
+            <form method="post">
+                <table id="table_t">
+            
+                  <tr>
+                    <td>Your Name:</td>
+                    <td>
+                        <input id="name" type="text" name="name" required>
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td>Your Email Address: </td>
+                    <td>
+                        <input type="email" name="email" required placeholder="Enter a valid email address">
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td>Your Birth Date:</td>
+                    <td>
+                        <input id="bdate" type="text" name="bdate" required> 
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td>Artist:</td>
+                    <td>
+                        <input id="artist" type="text" name="artist" required>  
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td>Country:</td>
+                    <td>
+                        <input id="country" type="text" name="country" required> 
+                    </td> 
+                  </tr>                  
+                  <tr>
+                    <td>Age:</td>
+                    <td>
+                        <input type="checkbox" name="age[]" value="Prehistoric">Prehistoric
+                        <input type="checkbox" name="age[]" value="Prehistoric">Ancient
+                        <input type="checkbox" name="age[]" value="Prehistoric">Medieval
+                        <input type="checkbox" name="age[]" value="Prehistoric">Renaissance
+                        <input type="checkbox" name="age[]" value="Prehistoric">Mannerism 
+                        <input type="checkbox" name="age[]" value="Prehistoric">Baroque 
+                        <input type="checkbox" name="age[]" value="Prehistoric">Mannerism
+                        <input type="checkbox" name="age[]" value="Prehistoric">Romanticism
+                        <input type="checkbox" name="age[]" value="Prehistoric">Realism
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Year:</td>
+                    <td>
+                        <input id="year" type="number" name="year" required>
+                    </td>
+                  </tr>
+            
+                </table>
+
+                <input type="submit" value="submit">
+
+            </form>
+
         </div>
     </div>
 
