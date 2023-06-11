@@ -1,0 +1,9 @@
+{"movies":[
+	{
+		"title": "Shawsank Redemption",
+        "year": "1994",
+		"director": "Frank Darabont",
+		"image": "images/shawsank.webp",
+		"text": "This prison drama starring Tim Robbins and Morgan Freeman, follows the story of a man who is wrongly convicted of murder and sent to Shawshank State Penitentiary, where he forms a bond with a fellow inmate. It has a current rating of 9.2 out of 10 on IMDb."		
+	}
+]}

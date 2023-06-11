@@ -1,0 +1,26 @@
+<library>
+  <book>
+    <title>The Count of Monte Cristo</title>
+    <author>Alexandre Dumas</author>
+    <year>1844</year>
+    <genre>Adventure</genre>
+  </book>
+  <book>
+    <title>Crime and Punishment</title>
+    <author>Fyodor Dostoevsky</author>
+    <year>1866</year>
+    <genre>Novel</genre>
+  </book>
+  <book>
+    <title>The Picture of Dorian Gray</title>
+    <author>Oscar Wilde</author>
+    <year>1890</year>
+    <genre>Gothic Fiction</genre>
+  </book>
+  <book>
+    <title>Fahrenheit 451</title>
+    <author>Ray Bradbury</author>
+    <year>1953</year>
+    <genre>Dystopian Fiction</genre>
+  </book>
+</library>

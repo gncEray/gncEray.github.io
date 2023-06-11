@@ -17,6 +17,7 @@ $(document).ready(function() {
     $("#req_res").fadeOut(0)
     $("#dialog").fadeOut(0)
     $(".quiz").fadeOut(0)
+    
 
 
     // opens daily quiz in index.html
@@ -74,5 +75,87 @@ $(document).ready(function() {
         }
         
     })
+
+
+
+
+    //------------ Sprint 3 and 4  ---------//
+
+
+    // JSON art.html
+    $("#nav_list button").click(function(event) {
+        event.preventDefault();
+    
+        var title = $(this).attr("title");
+    
+        $.getJSON("json_files/" + title + ".json", function(data) {
+            
+          $(".art_main").empty();  // clearing the elements from the main element
+    
+          data.arts.forEach(function(art) {
+            var title = $("<h1>").text(art.title);
+            var image = $("<img>").attr("src", art.image);
+            var artist = $("<h2>").html(art.artist);
+            var popular = $("<h2>").html(art.popular);
+            var description = $("<p>").text(art.text);
+    
+            // putting data taken from JSON
+            $(".art_main").append(title, image, artist, description);
+            });
+        });  // end getJSON
+    });  // end click
+
+
+
+    // XML book.html
+    $("#btn_book button").click(function(event) {
+        $("#books_main").empty();
+        $.get("books.xml", function(data) {
+            $(data).find("library").children().each(function() {
+              var xmlDoc = $(this);
+              var bookTitle = xmlDoc.find("title").text();
+              var bookAuthor = xmlDoc.find("author").text();
+              var bookGenre = xmlDoc.find("genre").text();
+              var bookYear = xmlDoc.find("year").text();
+        
+              var listItem = $("<li>").html("<h3>" + bookTitle + "</h3>" +
+                "<p>" + bookAuthor + "</p>" +
+                "<p>" + bookGenre + "</p>" +
+                "<p>" + bookYear + "</p>");
+
+              $("#books_main").append(listItem);  // appending taken book items as list item to HTML
+        
+            });
+          });
+    });  // end click
+
+
+    // API cinema.html
+    // Taking API from api.themoviedb.org and show data in cinema.html
+    $("#btn_cinema button").click(function(event) {
+        var apiKey = '154b3dd12fe7f8bd63f51d29378c0460'; // api key I took from website
+        var url = 'https://api.themoviedb.org/3/movie/popular?api_key=' + apiKey;
+
+        $.getJSON(url, function(data) {
+            var movies = data.results;
+            var html = '<div id="movies">';
+
+            $.each(movies, function(i, movie) {
+                var posterUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
+                html += '<div class="movie">';
+                html += '<img src="' + posterUrl + '">';
+                html += '<h2>' + movie.title + '</h2>';
+                html += '<p>IMDb Points: ' + movie.vote_average + '</p>';
+                html += '<p>Release Year: ' + movie.release_date.substring(0, 4) + '</p>';  // substring to take only year
+                html += '<p>Overview: ' + movie.overview + '</p>';
+                html += '</div>';
+            });
+
+            html += '</div>';
+            $('#movies').append(html);
+        });
+
+    });  // end clicks
+
 
 })

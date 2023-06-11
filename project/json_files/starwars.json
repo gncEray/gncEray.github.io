@@ -1,0 +1,9 @@
+{"movies":[
+	{
+		"title": "Star Wars",
+        "year": "1977",
+		"director": "George Lucas",
+		"image": "images/star_wars.jpg",
+		"text": "This groundbreaking sci-fi adventure introduced audiences to a galaxy far, far away and captured the imaginations of generations of moviegoers. With its memorable characters, epic storyline, and cutting-edge special effects, Star Wars revolutionized the film industry and became a cultural phenomenon."		
+	}
+]}

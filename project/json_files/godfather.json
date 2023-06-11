@@ -1,0 +1,9 @@
+{"movies":[
+	{
+		"title": "The Godfather",
+        "year": "1972",
+		"director": "Francis Ford Coppola",
+		"image": "images/godfather.jpg",
+		"text": "This iconic crime drama follows the Corleone family, a powerful Italian-American Mafia clan, and their struggle to maintain their power in the face of changing times. The Godfather has been hailed as a masterpiece of American cinema and is widely regarded as one of the greatest films ever made."		
+	}
+]}
