@@ -1159,13 +1159,72 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 
-/*
-
-Ultra Profile
-
-https://templatemo.com/tm-464-ultra-profile
-
-*/
+#main-nav-wrap {
+	display: block;
+	width: 100%;
+	font-family: "poppins-medium", sans-serif;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+/* dropdown nav */
+.main-navigation {
+	background: #000000;
+	padding: 24px 30px 42px;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: none;
+}
+.main-navigation > li {
+	display: block;
+	height: auto;
+	text-align: left;
+	padding: 0;
+}
+.main-navigation li a {
+	display: block;
+	color: #FFFFFF;
+	width: auto;
+	padding: 15px 0;
+	line-height: 16px;
+	border: none;
+}
+.main-navigation li a:hover {
+	color: #FF0077;
+	padding-left: 1rem;
+}
+.main-navigation li.current > a {
+	background: none;
+	color: #FF0077;
+}
+/**
+ * responsive:
+ * header styles
+ * --------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1024px) {
+	header .top-bar {
+		left: 60px;
+	}
+}
+@media only screen and (max-width:768px) {
+	header .top-bar {
+		left: 50px;
+	}
+}
+@media only screen and (max-width:600px) {
+	header .top-bar {
+		left: 35px;
+	}
+}
+@media only screen and (max-width:400px) {
+	header .top-bar {
+		left: 25px;
+	}
+}
 
 
 
